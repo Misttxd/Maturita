@@ -1,0 +1,14 @@
+default1 = odemcena pouze prvni, cely bily
+default2 = odemcena prvni a druha, cely bily
+default3 = odemcena prvni druha treti, cely bily
+
+Select11 = prvni odemceny sedy, druhy zamceny bily, treti zamceny bily
+Select12 = prvni odemceny sedy, druhy odemceny bily, treti zamceny bily
+select13 = prvni odemceny sedy, druhy odemceny sedy, treti odemceny bily
+
+Select21 = prvni odemceny bily, druhy odemceny sedy, treti zamceny bily
+Select22 = prvni odemceny bily, druhy odemceny sedy, treti odemceny bily
+Select23 = prvni odemceny bily, druhy zamceny sedy, treti zamceny bily
+
+Select31 = prvni odemceny bily, druhy odemceny bily, treti odemceny sedy
+Select32 = prvni odemceny bily, druhy zamceny bily, treti zamceny sedy

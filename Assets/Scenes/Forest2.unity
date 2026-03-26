@@ -4861,6 +4861,135 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1045699887
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3644489338602252377, guid: 427a54a412f8dba4a9f8206b639eec5b, type: 3}
+      propertyPath: m_Name
+      value: GameManager (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4038825442541252032, guid: 427a54a412f8dba4a9f8206b639eec5b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.0545366
+      objectReference: {fileID: 0}
+    - target: {fileID: 4038825442541252032, guid: 427a54a412f8dba4a9f8206b639eec5b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.4672635
+      objectReference: {fileID: 0}
+    - target: {fileID: 4038825442541252032, guid: 427a54a412f8dba4a9f8206b639eec5b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 90.08545
+      objectReference: {fileID: 0}
+    - target: {fileID: 4038825442541252032, guid: 427a54a412f8dba4a9f8206b639eec5b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4038825442541252032, guid: 427a54a412f8dba4a9f8206b639eec5b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4038825442541252032, guid: 427a54a412f8dba4a9f8206b639eec5b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4038825442541252032, guid: 427a54a412f8dba4a9f8206b639eec5b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4038825442541252032, guid: 427a54a412f8dba4a9f8206b639eec5b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4038825442541252032, guid: 427a54a412f8dba4a9f8206b639eec5b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4038825442541252032, guid: 427a54a412f8dba4a9f8206b639eec5b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5213212142305440416, guid: 427a54a412f8dba4a9f8206b639eec5b, type: 3}
+      propertyPath: Ryba
+      value: 
+      objectReference: {fileID: 1466488066}
+    - target: {fileID: 5213212142305440416, guid: 427a54a412f8dba4a9f8206b639eec5b, type: 3}
+      propertyPath: Stamp
+      value: 
+      objectReference: {fileID: 174493179}
+    - target: {fileID: 5213212142305440416, guid: 427a54a412f8dba4a9f8206b639eec5b, type: 3}
+      propertyPath: NewCam
+      value: 
+      objectReference: {fileID: 519420031}
+    - target: {fileID: 5213212142305440416, guid: 427a54a412f8dba4a9f8206b639eec5b, type: 3}
+      propertyPath: UICanvas
+      value: 
+      objectReference: {fileID: 1831001770}
+    - target: {fileID: 5213212142305440416, guid: 427a54a412f8dba4a9f8206b639eec5b, type: 3}
+      propertyPath: FailWindow
+      value: 
+      objectReference: {fileID: 2096041015}
+    - target: {fileID: 5213212142305440416, guid: 427a54a412f8dba4a9f8206b639eec5b, type: 3}
+      propertyPath: FishRating
+      value: 
+      objectReference: {fileID: 174493179}
+    - target: {fileID: 5213212142305440416, guid: 427a54a412f8dba4a9f8206b639eec5b, type: 3}
+      propertyPath: RybaSprite
+      value: 
+      objectReference: {fileID: 249018028}
+    - target: {fileID: 5213212142305440416, guid: 427a54a412f8dba4a9f8206b639eec5b, type: 3}
+      propertyPath: FishdexMenu
+      value: 
+      objectReference: {fileID: 815006754}
+    - target: {fileID: 5213212142305440416, guid: 427a54a412f8dba4a9f8206b639eec5b, type: 3}
+      propertyPath: LakeSpawner
+      value: 
+      objectReference: {fileID: 1029878627}
+    - target: {fileID: 5213212142305440416, guid: 427a54a412f8dba4a9f8206b639eec5b, type: 3}
+      propertyPath: RybaObrazek
+      value: 
+      objectReference: {fileID: 1384093879}
+    - target: {fileID: 5213212142305440416, guid: 427a54a412f8dba4a9f8206b639eec5b, type: 3}
+      propertyPath: FishNameText
+      value: 
+      objectReference: {fileID: 740249150}
+    - target: {fileID: 5213212142305440416, guid: 427a54a412f8dba4a9f8206b639eec5b, type: 3}
+      propertyPath: SliderCanvas
+      value: 
+      objectReference: {fileID: 1150529239}
+    - target: {fileID: 5213212142305440416, guid: 427a54a412f8dba4a9f8206b639eec5b, type: 3}
+      propertyPath: FishingSlider
+      value: 
+      objectReference: {fileID: 1757591081}
+    - target: {fileID: 5213212142305440416, guid: 427a54a412f8dba4a9f8206b639eec5b, type: 3}
+      propertyPath: InteractWindow
+      value: 
+      objectReference: {fileID: 2143710936}
+    - target: {fileID: 5213212142305440416, guid: 427a54a412f8dba4a9f8206b639eec5b, type: 3}
+      propertyPath: UICanvasCanvas
+      value: 
+      objectReference: {fileID: 1831001773}
+    - target: {fileID: 5213212142305440416, guid: 427a54a412f8dba4a9f8206b639eec5b, type: 3}
+      propertyPath: CatchCounterText
+      value: 
+      objectReference: {fileID: 444966053}
+    - target: {fileID: 5213212142305440416, guid: 427a54a412f8dba4a9f8206b639eec5b, type: 3}
+      propertyPath: RybaWindowPrefab
+      value: 
+      objectReference: {fileID: 1466488066}
+    - target: {fileID: 5213212142305440416, guid: 427a54a412f8dba4a9f8206b639eec5b, type: 3}
+      propertyPath: SliderCanvasCanvas
+      value: 
+      objectReference: {fileID: 1150529243}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 427a54a412f8dba4a9f8206b639eec5b, type: 3}
 --- !u!1 &1080380368
 GameObject:
   m_ObjectHideFlags: 0
@@ -8613,3 +8742,4 @@ SceneRoots:
   - {fileID: 1443640566}
   - {fileID: 1029878629}
   - {fileID: 710447749}
+  - {fileID: 1045699887}

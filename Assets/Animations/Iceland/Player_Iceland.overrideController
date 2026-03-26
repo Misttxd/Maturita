@@ -7,5 +7,21 @@ AnimatorOverrideController:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Player_Iceland
-  m_Controller: {fileID: 0}
-  m_Clips: []
+  m_Controller: {fileID: 9100000, guid: 4eb70e77c2b08ad409d8cfadb82724d4, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 64f5283af31eec448a4a41573d417c94, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 0a38dcae793484e43b1ccd4df5eca213, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 9bdba067c667c194895587fbad37005c, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 1df6188be41840142bc3d84f0ae32f80, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 505365c773ece91418c661eaa9460229, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 9b540876a760fda4394eb8057d4bba9c, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 27087a3320d4c7645b8432a11f6e72cc, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: a885ea76fc9d3794ba1bb0d4549d79eb, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 7b23a80cc71ca6847a1f962e3c180836, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 20c7c16610ee90e469921732ea53d410, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 6cd5e42813df5344fb81bc10292510ae, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: b0716e1039ae0d94e9292c0ae8f5209f, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: fa8cba48634b0854f9317f30a94afd45, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 1bf8b2a4dc287cc45a504c05160d995f, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: ee3f780d0a758634e8873521af910cd9, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 0cb5a59fe64fbab45a83876b0b1a9f7f, type: 2}

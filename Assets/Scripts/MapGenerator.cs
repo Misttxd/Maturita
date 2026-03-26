@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using UnityEngine;
 
 public class MapGenerator : MonoBehaviour
@@ -20,26 +20,32 @@ public class MapGenerator : MonoBehaviour
 
     public static MapGenerator Instance { get; private set; }
 
+    private bool isInitialized = false;
+
     void Start()
     {
         Instance = this;
+    }
 
-        PlayerObject = GameManager.Instance.Player;
-
-        //LakeSpawnerScript = LakeSpawner.Instance;
-
-        player = PlayerObject.transform;
-
-        // Spawn initial objects
-        Vector2 initialSpawnCenter = player.position;
-        for (int i = 0; i < initialObjects; i++)
+    void Update()
+    {
+        if (!isInitialized && GameManager.Instance != null && GameManager.Instance.Player != null)
         {
-            Vector2 randomPosition = GetRandomPositionInSquare(initialSpawnCenter, initialSpawnAreaSize);
-            SpawnObject(randomPosition);
-        }
+            isInitialized = true;
+            PlayerObject = GameManager.Instance.Player.gameObject;
+            player = PlayerObject.transform;
 
-        // Start spawning more objects as the player moves
-        StartCoroutine(ContinuousObjectSpawn());
+            // Spawn initial objects
+            Vector2 initialSpawnCenter = player.position;
+            for (int i = 0; i < initialObjects; i++)
+            {
+                Vector2 randomPosition = GetRandomPositionInSquare(initialSpawnCenter, initialSpawnAreaSize);
+                SpawnObject(randomPosition);
+            }
+
+            // Start spawning more objects as the player moves
+            StartCoroutine(ContinuousObjectSpawn());
+        }
     }
 
     IEnumerator ContinuousObjectSpawn()
@@ -103,7 +109,7 @@ public class MapGenerator : MonoBehaviour
                 //objekty se nebudou spawnovat pokudse nevyplni vsechny tyhle reference -> jestli s tim nekdy bude problem je to kvuli tomu
 
             }
-            else //GameObjecty, kter� nejsou "Voda..." se vygenerujou bez scriptu
+            else //GameObjecty, které nejsou "Voda..." se vygenerujou bez scriptu
             {
                 Instantiate(randomObjectPrefab, position, Quaternion.identity);
             }

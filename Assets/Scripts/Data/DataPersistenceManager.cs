@@ -1,4 +1,4 @@
-using System.Collections;
+Ôªøusing System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
@@ -21,7 +21,7 @@ public class DataPersistenceManager : MonoBehaviour
     {
         if (Instance != null)
         {
-            Debug.Log("Naölo se vÌce neû jeden Data Persistence Manager ve scÈnÏ. Destroying the newest one");
+            Debug.Log("Na≈°lo se v√≠ce ne≈æ jeden Data Persistence Manager ve sc√©nƒõ. Destroying the newest one");
             Destroy(this.gameObject);
             return;
         }
@@ -67,12 +67,12 @@ public class DataPersistenceManager : MonoBehaviour
     {
         Debug.Log("LOADGAME");
 
-        // naËtenÌ dat pomocÌ dataHandler
+        // naƒçten√≠ dat pomoc√≠ dataHandler
         this.gameData = dataHandler.Load();
 
         if (this.gameData == null)
         {
-            Debug.Log("Nebyly nalezeny û·dnÈ data, zaloûne novou hru");
+            Debug.Log("Nebyly nalezeny ≈æ√°dn√© data, zalo≈æne novou hru");
             this.gameData = new GameData();
             return;
         }
@@ -88,7 +88,7 @@ public class DataPersistenceManager : MonoBehaviour
     {
         if (this.gameData == null)
         {
-            Debug.LogWarning("Nebyly nalezeny û·dnÈ data, zaloûne novou hru");
+            Debug.LogWarning("Nebyly nalezeny ≈æ√°dn√© data, zalo≈æne novou hru");
             return;
         }
 

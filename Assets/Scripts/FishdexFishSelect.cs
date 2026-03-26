@@ -1,4 +1,4 @@
-using System.Collections;
+Ôªøusing System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
@@ -29,7 +29,7 @@ public class FishdexFishSelect : MonoBehaviour
     {
         if (FishingMiniGameScript.ryba1 == true) { 
             RybaObrazek.sprite = Resources.Load<Sprite>("Ryby/RRyba1");
-            CatchCounterText.text = "PoËet ulovenÌ: " + FishingMiniGameScript.ryba1Count.ToString();
+            CatchCounterText.text = "Poƒçet uloven√≠: " + FishingMiniGameScript.ryba1Count.ToString();
             FishNameText.text = FishingMiniGameScript.Text1.text;
             FishRating.sprite = Resources.Load<Sprite>("StarBar/Star1");
             
@@ -40,7 +40,7 @@ public class FishdexFishSelect : MonoBehaviour
         if (FishingMiniGameScript.ryba2 == true)
         {
             RybaObrazek.sprite = Resources.Load<Sprite>("Ryby/RRyba2");
-            CatchCounterText.text = "PoËet ulovenÌ: " + FishingMiniGameScript.ryba2Count.ToString();
+            CatchCounterText.text = "Poƒçet uloven√≠: " + FishingMiniGameScript.ryba2Count.ToString();
             FishNameText.text = FishingMiniGameScript.Text2.text;
             FishRating.sprite = Resources.Load<Sprite>("StarBar/Star2");
            
@@ -51,7 +51,7 @@ public class FishdexFishSelect : MonoBehaviour
         if (FishingMiniGameScript.ryba3 == true)
         {
             RybaObrazek.sprite = Resources.Load<Sprite>("Ryby/RRyba3");
-            CatchCounterText.text = "PoËet ulovenÌ: " + FishingMiniGameScript.ryba3Count.ToString();
+            CatchCounterText.text = "Poƒçet uloven√≠: " + FishingMiniGameScript.ryba3Count.ToString();
             FishNameText.text = FishingMiniGameScript.Text3.text;
             FishRating.sprite = Resources.Load<Sprite>("StarBar/Star3");
             
@@ -62,7 +62,7 @@ public class FishdexFishSelect : MonoBehaviour
         if (FishingMiniGameScript.ryba4 == true)
         {
             RybaObrazek.sprite = Resources.Load<Sprite>("Ryby/RRyba4");
-            CatchCounterText.text = "PoËet ulovenÌ: " + FishingMiniGameScript.ryba4Count.ToString();
+            CatchCounterText.text = "Poƒçet uloven√≠: " + FishingMiniGameScript.ryba4Count.ToString();
             FishNameText.text = FishingMiniGameScript.Text4.text;
             FishRating.sprite = Resources.Load<Sprite>("StarBar/Star4");
             
@@ -73,7 +73,7 @@ public class FishdexFishSelect : MonoBehaviour
         if (FishingMiniGameScript.ryba5 == true)
         {
             RybaObrazek.sprite = Resources.Load<Sprite>("Ryby/RRyba5");
-            CatchCounterText.text = "PoËet ulovenÌ: " + FishingMiniGameScript.ryba5Count.ToString();
+            CatchCounterText.text = "Poƒçet uloven√≠: " + FishingMiniGameScript.ryba5Count.ToString();
             FishNameText.text = FishingMiniGameScript.Text5.text;
             FishRating.sprite = Resources.Load<Sprite>("StarBar/Star5");
             
@@ -84,7 +84,7 @@ public class FishdexFishSelect : MonoBehaviour
         if (FishingMiniGameScript.ryba6 == true)
         {
             RybaObrazek.sprite = Resources.Load<Sprite>("Ryby/RRyba6");
-            CatchCounterText.text = "PoËet ulovenÌ: " + FishingMiniGameScript.ryba6Count.ToString();
+            CatchCounterText.text = "Poƒçet uloven√≠: " + FishingMiniGameScript.ryba6Count.ToString();
             FishNameText.text = FishingMiniGameScript.Text6.text;
             FishRating.sprite = Resources.Load<Sprite>("StarBar/Star1");
             
@@ -95,7 +95,7 @@ public class FishdexFishSelect : MonoBehaviour
         if (FishingMiniGameScript.ryba7 == true)
         {
             RybaObrazek.sprite = Resources.Load<Sprite>("Ryby/RRyba7");
-            CatchCounterText.text = "PoËet ulovenÌ: " + FishingMiniGameScript.ryba7Count.ToString();
+            CatchCounterText.text = "Poƒçet uloven√≠: " + FishingMiniGameScript.ryba7Count.ToString();
             FishNameText.text = FishingMiniGameScript.Text7.text;
             FishRating.sprite = Resources.Load<Sprite>("StarBar/Star2");
             
@@ -107,7 +107,7 @@ public class FishdexFishSelect : MonoBehaviour
         if (FishingMiniGameScript.ryba8 == true)
         {
             RybaObrazek.sprite = Resources.Load<Sprite>("Ryby/RRyba8");
-            CatchCounterText.text = "PoËet ulovenÌ: " + FishingMiniGameScript.ryba8Count.ToString();
+            CatchCounterText.text = "Poƒçet uloven√≠: " + FishingMiniGameScript.ryba8Count.ToString();
             FishNameText.text = FishingMiniGameScript.Text8.text;
             FishRating.sprite = Resources.Load<Sprite>("StarBar/Star3");
             
@@ -119,7 +119,7 @@ public class FishdexFishSelect : MonoBehaviour
         if (FishingMiniGameScript.ryba9 == true)
         {
             RybaObrazek.sprite = Resources.Load<Sprite>("Ryby/RRyba9");
-            CatchCounterText.text = "PoËet ulovenÌ: " + FishingMiniGameScript.ryba9Count.ToString();
+            CatchCounterText.text = "Poƒçet uloven√≠: " + FishingMiniGameScript.ryba9Count.ToString();
             FishNameText.text = FishingMiniGameScript.Text9.text;
             FishRating.sprite = Resources.Load<Sprite>("StarBar/Star4");
            
@@ -131,7 +131,7 @@ public class FishdexFishSelect : MonoBehaviour
         if (FishingMiniGameScript.ryba10 == true)
         {
             RybaObrazek.sprite = Resources.Load<Sprite>("Ryby/RRyba10");
-            CatchCounterText.text = "PoËet ulovenÌ: " + FishingMiniGameScript.ryba10Count.ToString();
+            CatchCounterText.text = "Poƒçet uloven√≠: " + FishingMiniGameScript.ryba10Count.ToString();
             FishNameText.text = FishingMiniGameScript.Text10.text;
             FishRating.sprite = Resources.Load<Sprite>("StarBar/Star5");
             
@@ -143,7 +143,7 @@ public class FishdexFishSelect : MonoBehaviour
         if (FishingMiniGameScript.ryba11 == true)
         {
             RybaObrazek.sprite = Resources.Load<Sprite>("Ryby/RRyba11");
-            CatchCounterText.text = "PoËet ulovenÌ: " + FishingMiniGameScript.ryba11Count.ToString();
+            CatchCounterText.text = "Poƒçet uloven√≠: " + FishingMiniGameScript.ryba11Count.ToString();
             FishNameText.text = FishingMiniGameScript.Text11.text;
             FishRating.sprite = Resources.Load<Sprite>("StarBar/Star1");
             
@@ -155,7 +155,7 @@ public class FishdexFishSelect : MonoBehaviour
         if (FishingMiniGameScript.ryba12 == true)
         {
             RybaObrazek.sprite = Resources.Load<Sprite>("Ryby/RRyba12");
-            CatchCounterText.text = "PoËet ulovenÌ: " + FishingMiniGameScript.ryba12Count.ToString();
+            CatchCounterText.text = "Poƒçet uloven√≠: " + FishingMiniGameScript.ryba12Count.ToString();
             FishNameText.text = FishingMiniGameScript.Text12.text;
             FishRating.sprite = Resources.Load<Sprite>("StarBar/Star2");
             
@@ -167,7 +167,7 @@ public class FishdexFishSelect : MonoBehaviour
         if (FishingMiniGameScript.ryba13 == true)
         {
             RybaObrazek.sprite = Resources.Load<Sprite>("Ryby/RRyba13");
-            CatchCounterText.text = "PoËet ulovenÌ: " + FishingMiniGameScript.ryba13Count.ToString();
+            CatchCounterText.text = "Poƒçet uloven√≠: " + FishingMiniGameScript.ryba13Count.ToString();
             FishNameText.text = FishingMiniGameScript.Text13.text;
             FishRating.sprite = Resources.Load<Sprite>("StarBar/Star3");
             
@@ -179,7 +179,7 @@ public class FishdexFishSelect : MonoBehaviour
         if (FishingMiniGameScript.ryba14 == true)
         {
             RybaObrazek.sprite = Resources.Load<Sprite>("Ryby/RRyba14");
-            CatchCounterText.text = "PoËet ulovenÌ: " + FishingMiniGameScript.ryba14Count.ToString();
+            CatchCounterText.text = "Poƒçet uloven√≠: " + FishingMiniGameScript.ryba14Count.ToString();
             FishNameText.text = FishingMiniGameScript.Text14.text;
             FishRating.sprite = Resources.Load<Sprite>("StarBar/Star4");
             
@@ -191,7 +191,7 @@ public class FishdexFishSelect : MonoBehaviour
         if (FishingMiniGameScript.ryba15 == true)
         {
             RybaObrazek.sprite = Resources.Load<Sprite>("Ryby/RRyba15");
-            CatchCounterText.text = "PoËet ulovenÌ: " + FishingMiniGameScript.ryba15Count.ToString();
+            CatchCounterText.text = "Poƒçet uloven√≠: " + FishingMiniGameScript.ryba15Count.ToString();
             FishNameText.text = FishingMiniGameScript.Text15.text;
             FishRating.sprite = Resources.Load<Sprite>("StarBar/Star5");
             

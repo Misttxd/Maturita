@@ -1,4 +1,4 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 
 public class LakeSpawner : MonoBehaviour
 {
@@ -9,7 +9,7 @@ public class LakeSpawner : MonoBehaviour
     public SpriteRenderer rybaSpriteRenderer;
     public GameObject rybaWindowPrefab;
 
-    public static LakeSpawner Instance { get; private set; } //Pøidìluje reference pro novì spawnuté objekty rybníkù
+    public static LakeSpawner Instance { get; private set; } //PÅ™idÄ›luje reference pro novÄ› spawnutÃ© objekty rybnÃ­kÅ¯
 
     private void Start()
     {

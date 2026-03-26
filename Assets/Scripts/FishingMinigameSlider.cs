@@ -1,4 +1,4 @@
-using System.Threading;
+﻿using System.Threading;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -14,7 +14,7 @@ public class FishingMiniGame : MonoBehaviour, IDataPersistence
     private float progress = 0f;
 
 
-    [Header("Z�kladn� reference")]
+    [Header("Zďż˝kladnďż˝ reference")]
     public Canvas FishingMiniGameCanvas;
     public FishingEvent FishingEventScript;
     public GameObject RybaWindow;
@@ -29,7 +29,7 @@ public class FishingMiniGame : MonoBehaviour, IDataPersistence
     [HideInInspector] public string fishName;
 
 
-    [Header("Booly pro odem�en� ryby")]
+    [Header("Booly pro odemďż˝enďż˝ ryby")]
     [HideInInspector] public bool ryba1 = false;
     [HideInInspector] public bool ryba2 = false;
     [HideInInspector] public bool ryba3 = false;
@@ -46,7 +46,7 @@ public class FishingMiniGame : MonoBehaviour, IDataPersistence
     [HideInInspector] public bool ryba14 = false;
     [HideInInspector] public bool ryba15 = false;
 
-    [Header("Po�ty chycen�ch ryb")]
+    [Header("Poďż˝ty chycenďż˝ch ryb")]
     [HideInInspector] public int ryba1Count = 0;
     [HideInInspector] public int ryba2Count = 0;
     [HideInInspector] public int ryba3Count = 0;
@@ -63,11 +63,11 @@ public class FishingMiniGame : MonoBehaviour, IDataPersistence
     [HideInInspector] public int ryba14Count = 0;
     [HideInInspector] public int ryba15Count = 0;
 
-    [Header("Odem�en� sv�ty")]
+    [Header("Odemďż˝enďż˝ svďż˝ty")]
     [HideInInspector] public bool World2Unlocked = false;
     [HideInInspector] public bool World3Unlocked = false;
 
-    [Header("Reference pro jednotliv� jm�na ryb")]
+    [Header("Reference pro jednotlivďż˝ jmďż˝na ryb")]
     public TextMeshProUGUI Text1;
     public TextMeshProUGUI Text2;
     public TextMeshProUGUI Text3;
@@ -104,10 +104,14 @@ public class FishingMiniGame : MonoBehaviour, IDataPersistence
     public string SceneName;
     public static FishingMiniGame Instance { get; private set; }
 
-    
-    void Start()
+    private void Awake()
     {
         Instance = this;
+    }
+
+
+    void Start()
+    {
         FishingEventScript = FishingEvent.Instance;
         FishingMiniGameCanvas = GameManager.Instance.SliderCanvasCanvas;
         FishingMiniGameCanvas.enabled = false;
@@ -120,12 +124,12 @@ public class FishingMiniGame : MonoBehaviour, IDataPersistence
         RybaSpriteRenderer = GameManager.Instance.RybaSprite.GetComponent<SpriteRenderer>();
         TimerScript = Timer.Instance;
         FishdexMenu = GameManager.Instance.FishdexMenu;
-}
+    }
 
 
     public void Update()
     {
-        SceneName = SceneManager.GetActiveScene().name; //Ulo�en� aktivn� sc�ny
+        SceneName = SceneManager.GetActiveScene().name; //Uloďż˝enďż˝ aktivnďż˝ scďż˝ny
 
         if (ryba1 == true)
         {
@@ -264,12 +268,12 @@ public class FishingMiniGame : MonoBehaviour, IDataPersistence
     }
 
 
-    //                                                                 GENEROV�N� RYB  
+    //                                                                 GENEROVďż˝Nďż˝ RYB  
 
     private int[] starRatings = { 1, 2, 3, 4, 5 }; //tiery rarity (ve hvezdickach)
-    private float[] starChances = { 55f, 26f, 13f, 4f, 2f }; //procentu�ln� �ance
+    private float[] starChances = { 55f, 26f, 13f, 4f, 2f }; //procentuďż˝lnďż˝ ďż˝ance
 
-    public string[][] fishesByStarW1 = new string[][] //ryby pro 1. sv�t
+    public string[][] fishesByStarW1 = new string[][] //ryby pro 1. svďż˝t
     {
         new string[] { "ryba1" },   // 1* ryby
         new string[] { "ryba2" },   // 2* ryby
@@ -278,7 +282,7 @@ public class FishingMiniGame : MonoBehaviour, IDataPersistence
         new string[] { "ryba5" }    // 5* ryby
     };
 
-    public string[][] fishesByStarW2 = new string[][] //ryby pro 2. sv�t
+    public string[][] fishesByStarW2 = new string[][] //ryby pro 2. svďż˝t
     {
         new string[] { "ryba6" },   // 1* ryby
         new string[] { "ryba7" },   // 2* ryby
@@ -287,7 +291,7 @@ public class FishingMiniGame : MonoBehaviour, IDataPersistence
         new string[] { "ryba10" }    // 5* ryby
     };
 
-    public string[][] fishesByStarW3 = new string[][] //ryby pro 3. sv�t
+    public string[][] fishesByStarW3 = new string[][] //ryby pro 3. svďż˝t
     {
         new string[] { "ryba11" },   // 1* ryby
         new string[] { "ryba12" },   // 2* ryby
@@ -363,7 +367,7 @@ public class FishingMiniGame : MonoBehaviour, IDataPersistence
 
     }
 
-    //                                                                 GENEROV�N� RYB  
+    //                                                                 GENEROVďż˝Nďż˝ RYB  
 
     void ShowResult()
     {
@@ -557,7 +561,7 @@ public class FishingMiniGame : MonoBehaviour, IDataPersistence
         }
     }
 
-    public void LoadData(GameData data) //Nahr�v�n� dat p�es persistance manager do jednotliv�ch prom�nn�ch po loadnut� hry
+    public void LoadData(GameData data) //Nahrďż˝vďż˝nďż˝ dat pďż˝es persistance manager do jednotlivďż˝ch promďż˝nnďż˝ch po loadnutďż˝ hry
     {
         this.ryba1Count = data.ryba1Count;
         this.ryba2Count = data.ryba2Count;
@@ -596,7 +600,7 @@ public class FishingMiniGame : MonoBehaviour, IDataPersistence
         
     }
 
-    public void SaveData(ref GameData data) //Ukl�d�n� dat p�es persistance manager do gamefily
+    public void SaveData(ref GameData data) //Uklďż˝dďż˝nďż˝ dat pďż˝es persistance manager do gamefily
     {
         data.ryba1Count = this.ryba1Count;
         data.ryba2Count = this.ryba2Count;

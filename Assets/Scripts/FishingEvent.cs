@@ -1,4 +1,4 @@
-using JetBrains.Annotations;
+﻿using JetBrains.Annotations;
 using System.Net;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -7,7 +7,7 @@ using static FishingEvent;
 
 public class FishingEvent : MonoBehaviour
 {
-    [Header("Z�kladn� reference")]
+    [Header("Zďż˝kladnďż˝ reference")]
     public Canvas FishingMiniGameCanvas;
     public GameObject InteractWindow;
     public FishingMiniGame FishingMiniGameScript;
@@ -24,11 +24,14 @@ public class FishingEvent : MonoBehaviour
 
     public static FishingEvent Instance {get; private set;}
 
-    void Start()
+    private void Awake()
     {
         Instance = this;
+    }
 
-        //Nastaven� referenc� p�es GameManager
+    void Start()
+    {
+        //Nastaven referenc pes GameManager
         InteractWindow = GameManager.Instance.InteractWindow;
         FishingMiniGameCanvas = GameManager.Instance.SliderCanvas.GetComponent<Canvas>(); // to stejne jako SliderCanvasCanvas
         InteractWindow = GameManager.Instance.InteractWindow;
@@ -61,7 +64,7 @@ public class FishingEvent : MonoBehaviour
             Debug.Log("E");
             FishingMiniGameScript.RandomFish();
 
-            //k�d pro upravov�n� ryhclosti slideru podle vygenerovan� ryby
+            //kďż˝d pro upravovďż˝nďż˝ ryhclosti slideru podle vygenerovanďż˝ ryby
             FishingMiniGameScript.SliderSpeedModifier();
                 
             FishingMiniGameCanvas.enabled = true;
@@ -82,9 +85,9 @@ public class FishingEvent : MonoBehaviour
     }
 
     
-    public void OnCollisionEnter2D(Collision2D collision)//Akce, kter� se stanou po kolizi s Rybn�kem
+    public void OnCollisionEnter2D(Collision2D collision)//Akce, kterďż˝ se stanou po kolizi s Rybnďż˝kem
     {
-        if (collision.otherCollider.gameObject.name.StartsWith("Voda")) //Pot�eba rozli�it GameObjecty podle jm�na aby se mohl dynamicky m�nil objekt, se kter�m hr�c koliduje
+        if (collision.otherCollider.gameObject.name.StartsWith("Voda")) //Potďż˝eba rozliďż˝it GameObjecty podle jmďż˝na aby se mohl dynamicky mďż˝nil objekt, se kterďż˝m hrďż˝c koliduje
         {
             FishingMiniGameScript.FishingEventScript = collision.otherCollider.gameObject.GetComponent<FishingEvent>();
             Collision = true;
@@ -97,7 +100,7 @@ public class FishingEvent : MonoBehaviour
     }
     
 
-    private void OnCollisionExit2D(Collision2D collision) //Akce, kter� se stanou po ukon�en� kolize s Rybn�kem
+    private void OnCollisionExit2D(Collision2D collision) //Akce, kterďż˝ se stanou po ukonďż˝enďż˝ kolize s Rybnďż˝kem
     {
         Collision = false;
         ActionEnabled = false;

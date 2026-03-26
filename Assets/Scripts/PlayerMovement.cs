@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody2D rb;
     public Animator animator;
 
-    [Header("Sm�r pohybu")]
+    [Header("Směr pohybu")]
     public Vector2 movementDirection;
 
     [Header("Rychlost pohybu")]

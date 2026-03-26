@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -13,8 +13,8 @@ public class OnMapLoad : MonoBehaviour
     void Start()
 
     {
-        FishingMiniGameScript = FishingMiniGame.Instance; //Reference pro FishingMiniGameScript, Kterı se inicializuje po spawnutí rybníku, co v tomhle pøípadì nedìlá problém jeliko mapa prakticky nejde rozkliknout bez toho, aby se rybník inicializoval
-        MapSpriteRenderer = GameObject.Find("Mapa").GetComponent<SpriteRenderer>(); //Reference obrázku mapy, pro zmìnu podle odemèenıch svìtù
+        FishingMiniGameScript = FishingMiniGame.Instance; //Reference pro FishingMiniGameScript, KterÃ½ se inicializuje po spawnutÃ­ rybnÃ­ku, coÅ¾ v tomhle pÅ™Ã­padÄ› nedÄ›lÃ¡ problÃ©m jelikoÅ¾ mapa prakticky nejde rozkliknout bez toho, aby se rybnÃ­k inicializoval
+        MapSpriteRenderer = GameObject.Find("Mapa").GetComponent<SpriteRenderer>(); //Reference obrÃ¡zku mapy, pro zmÄ›nu podle odemÄenÃ½ch svÄ›tÅ¯
 
 
         if (FishingMiniGameScript.World2Unlocked == false && FishingMiniGameScript.World3Unlocked == false)
